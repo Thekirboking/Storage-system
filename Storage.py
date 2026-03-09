@@ -8,8 +8,8 @@ def mdp():
     if text == "1234":
         label.config(text="Access granted")
         
-        # wait 2 seconds then clear the window
-        window.after(2000, clear_window)
+        # wait 1 second then clear the window
+        window.after(500, clear_window)
     else:
         label.config(text="Access denied")
 
