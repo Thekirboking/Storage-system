@@ -69,6 +69,9 @@ def delete_item():
         if item in storage:
             storage.remove(item)
             result.config(text=f"{item} removed from storage")
+            delete.destroy()
+            remove_button.destroy()
+            result.config(text="")
         else:
             result.config(text="Item not found")
 
